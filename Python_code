@@ -37,6 +37,21 @@ def c():
         pen.left(1)
     pen.penup()
     pen.fd(size * 3)
-
+def o():
+    pen.penup()
+    pen.fd(size * 5)
+    pen.right(-90)
+    pen.fd(size * 10)
+    pen.left(90)
+    pen.pendown()
+    for i in range(1,360):
+        pen.fd(size*0.1)
+        pen.left(1)
+    pen.penup()
+    pen.right(-90)
+    pen.fd(size * 12)
+    pen.left(90)
+    pen.fd(7 * size)
 c()
 x()
+o()
