@@ -1,5 +1,6 @@
 from turtle import *
-size = 20
+
+size = 5
 screen = Screen()
 screen.title("Handrighting bot")
 screen.screensize(400,100,"light blue")
@@ -11,19 +12,19 @@ pen.color("black")
 pen.speed(10)
 
 def x():
-
+    sizeu=size*1.5
     pen.pendown()
     pen.left(45)
-    pen.fd(size * 10)
+    pen.fd(sizeu * 10)
     pen.left(45+90)
     pen.penup()
-    pen.fd(size * 7)
+    pen.fd(sizeu * 7)
     pen.pendown()
     pen.left(90+45)
-    pen.fd(size * 10)
+    pen.fd(sizeu * 10)
     pen.left(45)
     pen.penup()
-    pen.fd(size * 3)
+    pen.fd(sizeu * 3)
 
 def c():
     pen.penup()
@@ -52,6 +53,6 @@ def o():
     pen.fd(size * 12)
     pen.left(90)
     pen.fd(7 * size)
-c()
-x()
+
 o()
+x()
